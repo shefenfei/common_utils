@@ -12,6 +12,5 @@ import java.lang.annotation.*;
 @Inherited
 @Documented
 public @interface InjectView {
-
     int id() default -1;
 }
