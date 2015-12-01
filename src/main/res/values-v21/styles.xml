@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="johnsonBaseMDAppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- 继承自这个主题兼容性-->
+    </style>
+</resources>
