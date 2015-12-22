@@ -49,6 +49,7 @@ dependencies {
     compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
     compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
     compile 'com.squareup.okhttp:logging-interceptor:2.6.0'
+    compile 'com.facebook.fresco:fresco:0.6.0+'
 }
 
 def siteUrl='https://github.com/shefenfei/common_utils' // 项目的主页

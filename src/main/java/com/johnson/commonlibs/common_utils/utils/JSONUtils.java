@@ -4,6 +4,7 @@ import java.lang.reflect.ParameterizedType;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
 import com.google.gson.*;
 import android.util.Log;
 import com.johnson.commonlibs.common_utils.contants.DateStyle;
@@ -21,6 +22,7 @@ public abstract class JSONUtils {
 
     /**
      * create the standard configuriation never return null
+     *
      * @return
      */
     private static final Gson createGson() {
@@ -52,7 +54,7 @@ public abstract class JSONUtils {
      * @return List<T>
      * @notice 用于转换纯数组JSON格式到Bean中, 在3.0的项目中基本不会使用到
      */
-    public static final  <T> List<T> getListFromJSON(Class<T> t, String json) {
+    public static final <T> List<T> getListFromJSON(Class<T> t, String json) {
         List<T> lists = new ArrayList<T>();
         try {
             JsonParser parser = new JsonParser();
@@ -100,7 +102,7 @@ public abstract class JSONUtils {
      * @author shaowei.ma
      * @date 2014年9月24日
      */
-    public static final  <T> List<T> getListFromJSON(ParameterizedType t, String json) {
+    public static final <T> List<T> getListFromJSON(ParameterizedType t, String json) {
         return GSON.fromJson(json, t);
     }
 
